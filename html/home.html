@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <img src="../assets/Logo.webp" alt="Logo">
+        </div>
+        <nav class="nav-links">
+            <a href="home.html" class="active">Home</a>
+            <a href="menu.html">Menu</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="hero__image">
+                <img src="../assets/Mole Chiapaneco.webp" alt="Mole Chiapaneco">
+            </div>
+            <div class="hero__content">
+                <h1 class="hero__title">Saborea el auténtico Mole Chiapaneco</h1>
+                <p class="hero__text">
+                    En nuestro restaurante preparamos cada platillo con recetas tradicionales
+                    e ingredientes frescos, para llevarte una experiencia llena de sabor y
+                    tradición en cada bocado. Descubre por qué somos el lugar favorito de
+                    quienes buscan la auténtica comida chiapaneca.
+                </p>
+                <div class="hero__actions">
+                    <a href="menu.html" class="btn btn--primary">
+                        <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        Ordenar
+                    </a>
+                    <a href="menu.html" class="btn btn--secondary">Ver más productos</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="new-dishes">
+            <h2 class="section-title">Lo nuevo</h2>
+            <div class="carousel">
+                <article class="dish-card">
+                    <img class="dish-card__img" src="../assets/Chalupas coletas.webp" alt="Chalupas coletas">
+                    <h3 class="dish-card__name">Chalupas Coletas</h3>
+                    <div class="dish-card__footer">
+                        <span class="dish-card__price">$85</span>
+                        <button type="button" class="dish-card__add">Agregar</button>
+                    </div>
+                </article>
+
+                <article class="dish-card">
+                    <img class="dish-card__img" src="../assets/Sopa de pan.webp" alt="Sopa de pan">
+                    <h3 class="dish-card__name">Sopa de Pan</h3>
+                    <div class="dish-card__footer">
+                        <span class="dish-card__price">$65</span>
+                        <button type="button" class="dish-card__add">Agregar</button>
+                    </div>
+                </article>
+
+                <article class="dish-card">
+                    <img class="dish-card__img" src="../assets/Chipilín con bolita.webp" alt="Chipilín con bolita">
+                    <h3 class="dish-card__name">Chipilín con Bolita</h3>
+                    <div class="dish-card__footer">
+                        <span class="dish-card__price">$70</span>
+                        <button type="button" class="dish-card__add">Agregar</button>
+                    </div>
+                </article>
+
+                <article class="dish-card">
+                    <img class="dish-card__img" src="../assets/Estofado de pollo.webp" alt="Estofado de pollo">
+                    <h3 class="dish-card__name">Estofado de Pollo</h3>
+                    <div class="dish-card__footer">
+                        <span class="dish-card__price">$95</span>
+                        <button type="button" class="dish-card__add">Agregar</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="chiapas-section">
+            <div class="chiapas-section__content">
+                <h3 class="chiapas-section__title">Comida Chiapaneca</h3>
+                <p class="chiapas-section__text">
+                    Nuestra cocina rescata las raíces de Chiapas: ingredientes de la
+                    tierra, especias locales y recetas que han pasado de generación en
+                    generación. Cada platillo es una forma de compartir nuestra cultura
+                    y tradición contigo.
+                </p>
+            </div>
+            <div class="chiapas-section__image">
+                <img src="../assets/gastronomia-de-Chiapas.webp" alt="Gastronomía chiapaneca">
+            </div>
+        </section>
+
+        <section class="register-section">
+            <h2 class="section-title">Regístrate</h2>
+            <form class="register-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn btn--primary register-form__submit">Crear cuenta</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <p class="site-footer__brand">Sabores de Chiapas</p>
+                <p class="site-footer__tagline">Tradición y sabor en cada platillo</p>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-col__title">Visítanos</h4>
+                <p class="footer-col__text">
+                    Av. Central Poniente #123, Col. Centro<br>
+                    Tuxtla Gutiérrez, Chiapas, C.P. 29000
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-col__title">Síguenos</h4>
+                <div class="footer-social">
+                    <a href="#" class="footer-social__link" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5H16l.5-3H13.5V8.5c0-.9.2-1.5 1.5-1.5H16.5V4.3C16.2 4.3 15.2 4 14 4c-2.4 0-4 1.5-4 4.2V10.5H7.5V13.5H10V21H13.5Z"/></svg>
+                    </a>
+                    <a href="#" class="footer-social__link" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                            <circle cx="12" cy="12" r="4"></circle>
+                            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer-social__link" aria-label="X (Twitter)">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 3H21.5l-6.6 7.6L22.7 21h-6.3l-4.9-6.4L5.9 21H3.3l7-8.1L2.8 3h6.4l4.5 5.9L18.9 3Z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="site-footer__divider">
+        <p class="site-footer__copy">&copy; 2026 Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
